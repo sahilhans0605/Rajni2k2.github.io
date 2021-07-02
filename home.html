@@ -1,16 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-  <script defer src="script.js"></script>
+  <!-- <script defer src="node_modules/swup/dist/swup.min.js"></script> -->
+  <!-- <script defer src="script.js"></script> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap">
+
+  <!-- BOX ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!-- Swiper css -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/stylehome.css">
+  <link rel="stylesheet" href="css/transistion.css">
+
   <title>Home</title>
 </head>
+
 <body>
-  <main id="swup">
-    <h1>This is the pricing page</h1>
-  </main>
+  <!-- header section -->
+  <header>
+    <a href="#">
+      <h1 style="color: white;">LOGO</h1>
+      <!-- <img alt="Logo" height="32px" src="logo.svg"> -->
+    </a>
+    <nav class="nav_links">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="#">Play</a></li>
+        <li><a href="#">Connect</a></li>
+        <li><a href="#About">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- slider -->
+  <div class="slider">
+    <main class="main">
+      <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+          <section class="islands swiper-slide">
+            <img class="islands_bg" src="/Rajni2k2.github.io/content/learn.jpg" alt="learn photo">
+            <div class="islands_container bd-container">
+              <div class="islands_data">
+                <h1 class="islands_title">Learn</h1>
+                <p class="islands_desciption">We provide you Roadmaps to guide you. <br> So that you can get the path to
+                  ace any CS subjects and Technologies <br> with best video and written resources</p>
+                <a href="#" class="islands_buttons">Explore the roadmaps<i
+                    class='bx bx-right-arrow islands_buttons-icon'></i></a>
+              </div>
+            </div>
+          </section>
+
+          <section class="islands swiper-slide">
+            <img class="islands_bg" src="/Rajni2k2.github.io/content/play.jpg" alt="play">
+            <div class="islands_container bd-container">
+              <div class="islands_data">
+                <h1 class="islands_title" style="color: black;">Play</h1>
+                <p class="islands_desciption">Enjoy simple metro games <br> made with JavaScript
+                  with available source code.
+                </p>
+                <a href="#" class="islands_buttons">Play our JS Arcade<i
+                    class='bx bx-right-arrow islands_buttons-icon'></i></a>
+              </div>
+            </div>
+          </section>
+
+          <section class="islands swiper-slide">
+            <img class="islands_bg" src="/Rajni2k2.github.io/content/connect.jpg" alt="connect">
+            <div class="islands_container bd-container">
+              <div class="islands_data">
+                <h1 class="islands_title">Connect</h1>
+                <p class="islands_desciption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
+                  molestiae velit eaque.</p>
+                <a href="#" class="islands_buttons">Get updates!<i
+                    class='bx bx-right-arrow islands_buttons-icon'></i></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+      <div class="controls gallery-thumbs">
+        <div class="controls_container swiper-wrapper">
+          <img src="/Rajni2k2.github.io/content/coding.png" alt="" class="controls_img swiper-slide">
+          <img src="/Rajni2k2.github.io/content/rubik.png" alt="" class="controls_img swiper-slide">
+          <img src="/Rajni2k2.github.io/content/connect.png" alt="" class="controls_img swiper-slide">
+
+        </div>
+
+    </main>
+  </div>
+
+
+  <!-- About section -->
+  <section id="About">
+    <h2 class="section-heading">About us </h2>
+    <div class="item item1">
+      <h3 class="item-heading">Rajnikant Dash</h3>
+      <p class="item-desc">
+        • Frontend developer
+      </p>
+      <a href="https://github.com/Rajni2002" target="blank"><img src="/Rajni2k2.github.io/content/github.png" alt="" width="25vh"></a>
+      <a href="https://www.linkedin.com/in/rajnikant-dash-2k2/" target="blank"><img src="/content/linkedin.png" alt=""
+          width="25vh"></a>
+    </div>
+
+
+    <div class="item item2">
+      <h3 class="item-heading">Sahil Hans</h3>
+      <p class="item-desc">
+        • Frontend and Content creation
+      </p>
+      <a href="https://www.linkedin.com/in/sahil-hans-5988651bb/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BOBA1CT%2FxRlCX0ypyRtne6Q%3D%3D"
+        target="blank"><img src="/Rajni2k2.github.io/content/linkedin.png" alt="" width="25vh"></a>
+    </div>
+
+
+    <div class="item item3">
+      <h3 class="item-heading">Palak Jaiswal</h3>
+      <p class="item-desc">
+        • Backend developer
+      </p>
+    </div>
+
+    <div class="item item4">
+      <h3 class="item-heading">Ishika</h3>
+      <p class="item-desc">
+        • Backend developer
+      </p>
+    </div>
+  </section>
+  <!-- end of services section -->
+
+
+  <div style="margin-bottom: 1000px;"></div>
+
+  <footer>
+    <div class="footer-content">
+      <h3>LOGO</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque quas eaque tempora reiciendis omnis, sit enim
+        cupiditate dolore sed beatae, harum vero nulla quae. Suscipit vero delectus quos provident sed.</p>
+      <ul class="socials">
+        <a href="https://github.com/Rajni2002" target="blank" style="padding: 20px;"><img src="/Rajni2k2.github.io/content/github.png" alt="" width="25vh"></a>
+        <a href="https://www.linkedin.com/in/rajnikant-dash-2k2/" target="blank"><img src="/Rajni2k2.github.io/content/linkedin.png" alt=""
+            width="25vh"></a>
+      </ul>
+
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy;2021 LOGO. designed by <span>Rajnikant dash</span></p>
+    </div>
+  </footer>
+  <!-- TEXT drop animation -->
+  <script src="Js/droptext.js"></script>
+
+  <!-- Swipper JS -->
+  <script src="Js/swiper-bundle.min.js"></script>
+
+  <!-- MAIN JS -->
+  <script src="Js/jshome.js"></script>
 </body>
+
 </html>

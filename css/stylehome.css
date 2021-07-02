@@ -1,0 +1,266 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
+  text-decoration: none;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-left: 90px;
+  padding-right: 100px;
+  background-color: rgb(149, 77, 243);
+  margin: 20px 20px;
+  border-radius: 50px;
+  box-shadow: 10px 10px rgb(253, 211, 171);
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  color: white;
+  padding: 6px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  background-color: rgb(255, 123, 0);
+}
+.slider {
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.swiper-container {
+  border-radius: 40px;
+  box-shadow: 20px 40px #cc90e7;
+
+}
+
+.islands {
+  height: 80vh;
+  position: relative;
+}
+.islands_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+.islands_container {
+  margin-left: 50px;
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 0.25fr;
+  align-content: center;
+}
+
+.islands_title,
+.islands_desciption {
+  color: white;
+}
+
+.islands_title {
+margin-bottom: 10px;
+  font-size: 2cm;
+
+}
+
+.islands_buttons {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 40px;
+  padding: 1rem 1.5rem;
+  background-color: rgb(255, 123, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: all 1s ease 0s;
+}
+.islands_buttons:hover {
+  background-color: rgb(149, 77, 243);
+}
+.islands_buttons-icon {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.gallery-thumbs{
+    margin-bottom: 20px;
+}
+.controls {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.25rem 0.5rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.controls_img {
+  width: 35px;
+  height: 35px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.controls_container {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+/* Active controls */
+.swiper-slide-thumb-active {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(187, 145, 241);
+}
+/* services section */
+
+
+
+#About {
+  padding: 10rem 0;
+  /* background-color: rgb(241, 237, 237); */
+  margin: 60px 60px;
+  padding-bottom: 100px;
+  /* background-color: rgb(235, 228, 228); */
+}
+.section-heading{
+  font-size: clamp(2rem,10vw,5rem);
+  text-transform: uppercase;
+  font-family: "Montserrat Subrayada", sans-serif;
+  letter-spacing: 1rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10rem;
+}
+#About .item{
+  padding:1.5rem 2.5rem;
+  margin:1.5rem 2.5rem;
+
+  border-radius: 12px;
+}
+
+
+#About .item1:hover{
+  background-color: rgb(215, 176, 233);
+}
+#About .item2:hover{
+  background-color: rgb(181, 231, 183);
+}
+#About .item3:hover{
+  background-color:rgb(233, 183, 154);
+}
+#About .item4:hover{
+  background-color: rgb(106, 173, 236);
+}
+
+#About .item-heading{
+  font-weight:500;
+  font-size: 2rem;
+}
+#About .item-desc{
+font-size: 15px;
+margin: 20px 0;
+}
+
+@media only screen and (max-width:768px) {
+  #services .all-items{
+    flex-direction: column;
+    text-align: center;
+  }
+  #services .item .icon{
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  #services .item{
+    margin: 2rem 0;
+  }
+  #services .item:nth-child(1){
+    background-color: rgb(215, 176, 233);
+  }
+  #services .item:nth-child(2){
+    background-color: rgb(176, 233, 200);
+  }
+  #services .item:nth-child(3){
+    background-color: rgb(233, 176, 200);
+  }
+  
+}
+
+footer{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background:rgb(139, 138, 141);
+  height: auto;
+  width: 100vw;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+.footer-content   h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.footer-bottom{
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
